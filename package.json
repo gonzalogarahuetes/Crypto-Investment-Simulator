@@ -1,0 +1,38 @@
+{
+  "name": "crypto-investment-simulator",
+  "version": "1.0.0",
+  "description": "Crypto Investment Simulator with React, Nodejs, Firebase Authentification and the CoinMarket API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "contributors": [
+    {
+      "name": "Gonzalo García Arahuetes",
+      "email": "gonzaloarahuetes@protonmail.com",
+      "url": "https://github.com/gonzalogarahuetes/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalogarahuetes/Crypto-Investment-Simulator.git"
+  },
+  "author": "Gonzalo García Arahuetes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gonzalogarahuetes/Crypto-Investment-Simulator/issues"
+  },
+  "homepage": "https://github.com/gonzalogarahuetes/Crypto-Investment-Simulator#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  }
+}
