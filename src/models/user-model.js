@@ -18,11 +18,6 @@ const UserSchema = new mongoose.Schema(
         message: (props) => `The email ${props.value} is not valid`,
       },
     },
-    password: {
-      type: String,
-      trim: true,
-      required: true,
-    },
     wallet: {
       type: mongoose.Types.ObjectId,
       //   default: {},

@@ -6,7 +6,7 @@ const cors = require("cors");
 const config = require("./config/app-config");
 
 const { UserRouter, WalletRouter } = require("./routes");
-const { errorMiddleware } = require("./middlewares");
+const { errorMiddleware, authMiddleware } = require("./middlewares");
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.use(
   })
 );
 
-app.use("/users", UserRouter);
+app.use("/users", authMiddleware, UserRouter);
 app.use("/wallets", WalletRouter);
 
 app.get("/", (req, res) => {

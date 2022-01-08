@@ -21,6 +21,9 @@ const WalletSchema = new mongoose.Schema(
             type: Number,
             required: true,
           },
+          initialPrice: {
+            type: Number,
+          },
         },
       ],
     },
